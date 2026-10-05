@@ -3,28 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Labs</title>
+
+    <title>Statistics Labs</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #222;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 60px 20px;
+        /* ---------- General ---------- */
+
+        * {
+            box-sizing: border-box;
         }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #121212;
+            color: #e5e5e5;
+        }
+
+        /* ---------- Main Container ---------- */
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 70px 20px;
+        }
+
+        /* ---------- Header ---------- */
 
         h1 {
             text-align: center;
-            margin-bottom: 10px;
+            margin: 0 0 12px 0;
+
+            color: #ff904b;
+            font-size: 42px;
+            font-weight: 700;
         }
 
         .subtitle {
             text-align: center;
-            color: #666;
-            margin-bottom: 40px;
+            color: #a0a0a0;
+            font-size: 17px;
+            margin: 0 0 50px 0;
         }
+
+        /* ---------- Lab Cards ---------- */
 
         .labs {
             display: grid;
@@ -34,29 +56,71 @@
 
         .lab {
             display: block;
-            background: white;
+
+            background: #1c1c1c;
+            border: 1px solid #333333;
+            border-radius: 12px;
+
             padding: 25px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
+
             text-decoration: none;
-            color: #222;
+            color: #e5e5e5;
+
+            transition:
+                transform 0.2s ease,
+                border-color 0.2s ease,
+                background 0.2s ease;
         }
+
+        /* ---------- Card Hover ---------- */
 
         .lab:hover {
-            background: #fafafa;
-            border-color: #999;
+            transform: translateY(-4px);
+
+            background: #222222;
+            border-color: #ff904b;
         }
 
+        /* ---------- Lab Titles ---------- */
+
         .lab h2 {
-            margin: 0 0 8px 0;
+            margin: 0 0 10px 0;
+
+            color: #ff904b;
+            font-size: 24px;
         }
+
+        /* ---------- Card Description ---------- */
 
         .lab p {
             margin: 0;
-            color: #666;
+
+            color: #999999;
+            font-size: 15px;
         }
 
+        /* ---------- Footer ---------- */
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+
+            color: #666666;
+            font-size: 14px;
+        }
+
+        /* ---------- Mobile ---------- */
+
         @media (max-width: 600px) {
+
+            .container {
+                padding: 50px 20px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
             .labs {
                 grid-template-columns: 1fr;
             }
@@ -66,47 +130,73 @@
 
 <body>
 
-    <h1>My Labs</h1>
-    <p class="subtitle">Lab assignments and projects</p>
+    <main class="container">
 
-    <div class="labs">
+        <h1>My Labs</h1>
 
-        <a class="lab" href="lab1.html">
-            <h2>Lab 1</h2>
-            <p>View Lab 1</p>
-        </a>
+        <p class="subtitle">
+            Lab assignments and projects
+        </p>
 
-        <a class="lab" href="lab2.html">
-            <h2>Lab 2</h2>
-            <p>View Lab 2</p>
-        </a>
 
-        <a class="lab" href="lab3.html">
-            <h2>Lab 3</h2>
-            <p>View Lab 3</p>
-        </a>
+        <div class="labs">
 
-        <a class="lab" href="lab4.html">
-            <h2>Lab 4</h2>
-            <p>View Lab 4</p>
-        </a>
+            <!-- Lab 1 -->
+            <a class="lab" href="lab1.html">
+                <h2>Lab 1</h2>
+                <p>View Lab 1</p>
+            </a>
 
-        <a class="lab" href="lab5.html">
-            <h2>Lab 5</h2>
-            <p>View Lab 5</p>
-        </a>
 
-        <a class="lab" href="lab6.html">
-            <h2>Lab 6</h2>
-            <p>View Lab 6</p>
-        </a>
+            <!-- Lab 2 -->
+            <a class="lab" href="lab2.html">
+                <h2>Lab 2</h2>
+                <p>View Lab 2</p>
+            </a>
 
-        <a class="lab" href="lab7.html">
-            <h2>Lab 7</h2>
-            <p>View Lab 7</p>
-        </a>
 
-    </div>
+            <!-- Lab 3 -->
+            <a class="lab" href="lab3.html">
+                <h2>Lab 3</h2>
+                <p>View Lab 3</p>
+            </a>
+
+
+            <!-- Lab 4 -->
+            <a class="lab" href="lab4.html">
+                <h2>Lab 4</h2>
+                <p>View Lab 4</p>
+            </a>
+
+
+            <!-- Lab 5 -->
+            <a class="lab" href="lab5.html">
+                <h2>Lab 5</h2>
+                <p>View Lab 5</p>
+            </a>
+
+
+            <!-- Lab 6 -->
+            <a class="lab" href="lab6.html">
+                <h2>Lab 6</h2>
+                <p>View Lab 6</p>
+            </a>
+
+
+            <!-- Lab 7 -->
+            <a class="lab" href="lab7.html">
+                <h2>Lab 7</h2>
+                <p>View Lab 7</p>
+            </a>
+
+        </div>
+
+
+        <footer>
+            
+        </footer>
+
+    </main>
 
 </body>
 </html>
